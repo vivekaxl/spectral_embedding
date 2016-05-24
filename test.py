@@ -11,7 +11,8 @@ import pickle
 
 data_folder = "./Data/"
 normalized_data_folder = "./NData/"
-folder_names = ["PROMISE"]#, "AEEEM", "NASA"]
+folder_names = ["PROMISE", "AEEEM", "NASA"]
+
 
 
 def run_cleaning(foldername):
@@ -136,3 +137,4 @@ if __name__ == "__main__":
     for folder_name in folder_names:
         run_default_experiment(data_folder + folder_name + "/")
         run_spectral_experiment(data_folder + folder_name + "/")
+
